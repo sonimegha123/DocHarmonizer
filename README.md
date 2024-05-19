@@ -8,12 +8,16 @@ Document Harmonizer is a Python project designed to convert DOCX documents into 
 4. Reconstructs the document in DOCX format, embedding extracted images and maintaining table placeholders.
 
 # Usage  
-1. Prepare your DOCX file and specify the paths for the input and output files in the main function call:  
+1. Set up your environment variables. Create a .env file in the root directory and add your OpenAI API key and pandoc path:
+   OPENAI_API_KEY=your_openai_api_key  
+   PANDOC_PATH=/path/to/your/pandoc  
+
+2. Prepare your DOCX file and specify the paths for the input and output files in the main function call:  
   if __name__ == "__main__":
     docx_file_path = "/path/to/your/input.docx"
     output_docx_path = "/path/to/your/output.docx"
     main(docx_file_path, output_docx_path)
 
-2. Run the script:
+3. Run the script:
    python your_script_name.py
 
